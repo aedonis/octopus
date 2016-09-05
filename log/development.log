@@ -1,5 +1,5 @@
-Started GET "/" for 60.60.192.46 at 2016-09-05 22:04:24 +0000
-Cannot render console from 60.60.192.46! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 164.77.182.126 at 2016-09-05 23:56:20 +0000
+Cannot render console from 164.77.182.126! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   
 ActiveRecord::PendingMigrationError (
 
@@ -45,119 +45,45 @@ puma (3.6.0) lib/puma/server.rb:275:in `block in run'
 puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
   Rendering /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
   Rendering /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
-  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.4ms)
+  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (1.7ms)
   Rendering /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
-  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
   Rendering /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
-  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
-  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.6ms)
-  [1m[35m (374.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
-  [1m[35m (258.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.2ms)
+  [1m[35m (213.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (174.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Migrating to CreateCharacters (20140726165921)
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
 DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
 
-  class CreateCharacters < ActiveRecord::Migration[4.2] (called from require at /home/tom/Dev/Octopus/bin/rails:8)
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer(3), "description" text, "created_at" datetime, "updated_at" datetime)[0m
+  class CreateCharacters < ActiveRecord::Migration[4.2] (called from load at /home/tom/.gem/ruby/2.3.0/bin/rake:23)
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer(3), "description" text, "created_at" datetime, "updated_at" datetime)[0m
   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140726165921"]]
-  [1m[35m (209.2ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (180.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-09-05 22:04:41 UTC], ["updated_at", 2016-09-05 22:04:41 UTC]]
-  [1m[35m (132.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-09-05 23:57:26 UTC], ["updated_at", 2016-09-05 23:57:26 UTC]]
+  [1m[35m (123.3ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Started GET "/" for 134.67.18.72 at 2016-09-05 22:04:46 +0000
-Cannot render console from 134.67.18.72! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (0.9ms)
-  Rendered welcome/_header.html.erb (0.7ms)
-  Rendered welcome/_menu.html.erb (0.9ms)
-  Rendered welcome/_footer.html.erb (0.3ms)
-Completed 200 OK in 1128ms (Views: 1119.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/assets/characters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 101.106.249.48 at 2016-09-05 22:04:48 +0000
-Cannot render console from 101.106.249.48! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 51.142.213.235 at 2016-09-05 22:04:48 +0000
-Cannot render console from 51.142.213.235! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 138.36.20.149 at 2016-09-05 22:04:48 +0000
-Cannot render console from 138.36.20.149! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/assets/application.self-5d0ed8f120eb4a1dd56e282a951884e835f2ac7058cfa345d13c05e375ec1bc6.css?body=1" for 218.124.220.243 at 2016-09-05 22:04:48 +0000
-Cannot render console from 218.124.220.243! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/characters/new" for 47.238.158.104 at 2016-09-05 22:04:54 +0000
-Cannot render console from 47.238.158.104! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by CharactersController#new as HTML
-Filter chain halted as #<Proc:0x00000004008490@/home/tom/.gem/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
-Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
-
-
-Started GET "/characters/new" for 148.193.67.134 at 2016-09-05 22:04:58 +0000
-Cannot render console from 148.193.67.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by CharactersController#new as HTML
-  Rendering characters/new.html.erb within layouts/application
-  Rendered characters/_character_basic_form.html.erb (10.7ms)
-  Rendered characters/new.html.erb within layouts/application (11.9ms)
-  Rendered welcome/_header.html.erb (0.4ms)
-  Rendered welcome/_menu.html.erb (0.6ms)
-  Rendered welcome/_footer.html.erb (0.2ms)
-Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 0.5ms)
-
-
-Started GET "/characters" for 152.211.24.121 at 2016-09-05 22:05:02 +0000
-Cannot render console from 152.211.24.121! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by CharactersController#index as HTML
-  Rendering characters/index.html.erb within layouts/application
-  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
-  Rendered characters/index.html.erb within layouts/application (1.3ms)
-  Rendered welcome/_header.html.erb (0.4ms)
-  Rendered welcome/_menu.html.erb (0.5ms)
-  Rendered welcome/_footer.html.erb (0.2ms)
-Completed 200 OK in 21ms (Views: 19.7ms | ActiveRecord: 0.2ms)
-
-
-Started GET "/characters" for 123.130.237.39 at 2016-09-05 22:05:07 +0000
-Cannot render console from 123.130.237.39! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by CharactersController#index as HTML
-  Rendering characters/index.html.erb within layouts/application
-  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
-  Rendered characters/index.html.erb within layouts/application (2.6ms)
-  Rendered welcome/_header.html.erb (0.5ms)
-  Rendered welcome/_menu.html.erb (0.9ms)
-  Rendered welcome/_footer.html.erb (0.3ms)
-Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.3ms)
-
-
-Started GET "/" for 89.214.125.119 at 2016-09-05 22:05:13 +0000
-Cannot render console from 89.214.125.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Processing by WelcomeController#index as HTML
-  Rendering welcome/index.html.erb within layouts/application
-  Rendered welcome/index.html.erb within layouts/application (0.4ms)
-  Rendered welcome/_header.html.erb (0.4ms)
-  Rendered welcome/_menu.html.erb (0.6ms)
-  Rendered welcome/_footer.html.erb (0.7ms)
-Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms)
-
-
-Started GET "/" for 1.85.225.198 at 2016-09-05 22:06:10 +0000
-Cannot render console from 1.85.225.198! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/" for 167.89.83.232 at 2016-09-05 23:57:34 +0000
+Cannot render console from 167.89.83.232! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by WelcomeController#index as HTML
   Rendering welcome/index.html.erb within layouts/application
   Rendered welcome/index.html.erb within layouts/application (0.8ms)
-  Rendered welcome/_header.html.erb (0.4ms)
+  Rendered welcome/_header.html.erb (0.3ms)
   Rendered welcome/_menu.html.erb (0.8ms)
   Rendered welcome/_footer.html.erb (0.2ms)
-Completed 200 OK in 291ms (Views: 283.7ms | ActiveRecord: 0.0ms)
+Completed 200 OK in 1456ms (Views: 1425.0ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/assets/characters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 166.23.230.44 at 2016-09-05 22:06:11 +0000
-Cannot render console from 166.23.230.44! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 14.23.153.165 at 2016-09-05 22:06:11 +0000
-Cannot render console from 14.23.153.165! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 197.86.43.21 at 2016-09-05 22:06:11 +0000
-Cannot render console from 197.86.43.21! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
-Started GET "/assets/application.self-5d0ed8f120eb4a1dd56e282a951884e835f2ac7058cfa345d13c05e375ec1bc6.css?body=1" for 135.16.131.138 at 2016-09-05 22:06:11 +0000
-Cannot render console from 135.16.131.138! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/characters.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 57.45.25.220 at 2016-09-05 23:57:36 +0000
+Cannot render console from 57.45.25.220! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/items.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 49.151.80.125 at 2016-09-05 23:57:36 +0000
+Cannot render console from 49.151.80.125! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 3.23.100.93 at 2016-09-05 23:57:36 +0000
+Cannot render console from 3.23.100.93! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Started GET "/assets/application.self-5d0ed8f120eb4a1dd56e282a951884e835f2ac7058cfa345d13c05e375ec1bc6.css?body=1" for 82.173.29.231 at 2016-09-05 23:57:36 +0000
+Cannot render console from 82.173.29.231! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
