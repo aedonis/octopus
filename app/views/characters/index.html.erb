@@ -1,0 +1,29 @@
+
+<div class="container">
+	<div class="center_div">
+
+<p>Bellow is a list of all characters created so far.</p>
+
+<table border=1>
+<th>Name</th>
+<th>*</th>
+<th>/</th>
+<th>X</th>
+<th>Age</th>
+<th>Description</th>
+
+<% @characters.each do |character| %>
+<tr>
+  <td><%= character.name %></td>
+  <td><%= link_to 'Show', character %></td>
+  <td><%= link_to 'Edit', edit_character_path(character) %></td>
+      <td><%= link_to 'Destroy', character_path(character),
+                    method: :delete, data: { confirm: 'Delete?' } %></td>
+  <td><%= character.age %></td>
+  <td><%= character.description %></td>
+</tr>
+<% end %>
+</table>
+
+	</div>
+</div>

@@ -1,0 +1,115 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+body {
+	background-color: white;
+}
+
+#menu-box {
+    background: #1C4E71;    
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+#menu {width: 960px; margin: 0 auto;}
+
+#menu li {
+  float: left;
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: #FFF;
+  float: left;
+  display: inline;
+  line-height: 35px;
+  padding: 0 18px;
+  border-right: 1px solid #6E9DBE;
+}
+
+#menu li.first a {border-left: 1px solid #6E9DBE;}
+#menu li.last a {border-left: 1px solid #6E9DBE;}
+#menu li.last a {margin-left: 250px;}
+#menu li a:hover, #menu li a.active {background-color: #133F5D;}
+
+#footer-box {
+  background: #1C4E71;
+  border: 1px solid gray;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91%; 
+}
+
+#footer {width: 960px; margin: 0 auto; color: #FFF; text-align: center;}
+
+#header-box {text-align: center;}
+#header {
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #D2DCE3;
+    text-align: left;
+    padding: 8px;}
+#header a {text-decoration: none; font-size: 36px; color: #1C4E71;}
+
+
+/* Clearfix */
+.clearfix:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  font-size: 0;
+  content: ' ';
+}
+
+.clearfix {min-height: 1px;}
+.clearfix {display: inline-block;}
+
+/* Backslash hack - nemel by to videt IE/Mac \*/
+.clearfix {display: block;}
+/* Konec hacku */
+
+.container {
+    text-align: center;
+}
+
+.center_div {
+    border: 1px solid gray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: #D2DCE3;
+    text-align: left;
+    padding: 8px;
+}
+
+img {padding: 20px;)
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
